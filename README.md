@@ -13,12 +13,17 @@ by all teams which owns player)
 the value is a function of self.score)
 
 
-
 Team:
 - self.name (team name - cannot be changed)
 - self.score (the sum of all scores obtained by the team)
 - self.players (contains the list of all players owned by the team)
 - self.budget (represents the actual budget of a team)
+
+Game:
+pass
+
+League:
+pass
 
 
 
