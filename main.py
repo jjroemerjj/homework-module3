@@ -3,12 +3,14 @@ from scripts.team import Team
 
 if __name__ == '__main__':
 
-    player1 = Player("Kuba")
     team1 = Team('Wisla')
 
-    print(player1)
-    print(team1.description())
+    player1 = Player("Kuba")
+    player2 = Player("Radek")
+    player3 = Player("Slawek")
 
     team1.add_player(player1)
+    team1.add_player(player2)
+    team1.add_player(player3)
 
-    print(type(team1.players))
+    team1.show_team()

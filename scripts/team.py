@@ -18,4 +18,7 @@ class Team:
     def update_budget(self, value):
         self.budget += value
 
+    def show_team(self):
+        [print(player) for player in self.players]
+
 
