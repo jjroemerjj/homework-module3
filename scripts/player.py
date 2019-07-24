@@ -20,3 +20,6 @@ class Player:
     def change_team(self, new_team_name):
         self.team = new_team_name
 
+    def __str__(self) -> str:
+        return f"Name: {self.name} Score: {self.score} Value: {self.value}"
+
