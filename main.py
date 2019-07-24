@@ -8,9 +8,11 @@ if __name__ == '__main__':
     player1 = Player("Kuba")
     player2 = Player("Radek")
     player3 = Player("Slawek")
+    player4 = Player("Paweł")
 
     team1.add_player(player1)
     team1.add_player(player2)
     team1.add_player(player3)
+    team1.add_player(player4)
 
     team1.show_team()
