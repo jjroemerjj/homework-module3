@@ -7,8 +7,7 @@ Project contains following classes:
 Player:
 - self.name (player name - cannot be changed)
 - self.team (represents which team actually 'owns' this player)
-- self.score (represents the sum of all scores obtained 
-by all teams which owns player) 
+- self.score (score obtained by player) 
 - self.value (represents the value of the player, 
 the value is a function of self.score)
 
