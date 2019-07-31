@@ -15,20 +15,18 @@ class Player:
             f"My score is {self.score} and my value is {self.value}"
         return des
 
+    def add_score(self, score):
+        self.score += score
+
+    def calculate_value(self):
+        self.value = self.score
+
+    def change_team(self, new_team_name):
+        self.team = new_team_name
+
     def update_database(self) -> None:
+        self.calculate_value()
         update_players_database(self.name, self.team, self.score, self.value)
-
-
-
-
-    # def add_score(self, score):
-    #     self.score += score
-    #
-    # def calculate_value(self):
-    #     self.value = self.score * 10 + 1
-    #
-    # def change_team(self, new_team_name):
-    #     self.team = new_team_name
 
     def __str__(self) -> str:
         return f"Name: {self.name} Score: {self.score} Value: {self.value}"
